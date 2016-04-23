@@ -1,0 +1,127 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: -webkit-linear-gradient(90deg, #3498db 10%, #2980b9 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #3498db 10%, #2980b9 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #3498db 10%, #2980b9 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #3498db 10%, #2980b9 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #3498db 10%, #2980b9 90%); /* W3C */
+}
+
+.title-wrapper {
+    background: none;
+    color: #ECF0F1;
+}
+
+.title-wrapper h1, .title-wrapper h4 {
+    float: none;
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.title-wrapper h1 {
+    font-size: 7em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    margin: 50px 0;
+}
+@media (max-width: 500px) {
+    .title-wrapper h1 {
+        font-size: 5em;
+    }
+}
+
+
+.timer-wrapper {
+    text-align: center;
+    background: none;
+    color: #ECF0F1;
+}
+
+.timer-wrapper .buttons .button {
+
+    cursor: pointer;
+    font-family: "FontAwesome", sans-serif;
+    -moz-transition: color 400ms;
+    -o-transition: color 400ms;
+    -webkit-transition: color 400ms;
+    transition: color 400ms
+}
+
+.timer-wrapper .buttons .button:hover {
+    color: #46627f;
+}
+
+.timer-wrapper .timerMinutes {
+    font-size: 8em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+.timer-wrapper .timerSeconds {
+    font-size: 8em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+.timer-wrapper .time-remaining {
+    font-size: 6em;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.svg-wrapper {
+    display: -webkit-box;
+}
+
+#colorado-flag {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#white-stripe {
+    margin-right: -3000px;
+    padding-right: 3000px;
+    margin-left: -3000px;
+    padding-left: 3000px;
+    margin-top: 90px;
+    background-color: white;
+    height: 180px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.play {
+    font-size: 4em;
+}
+
+.plus, .minus {
+    font-size: 2em;
+}
+
+.refresh, .stop {
+    font-size: 1.5em;
+}
