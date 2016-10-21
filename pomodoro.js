@@ -89,6 +89,19 @@ $(document).ready(function() {
         timer.start(time);
     });
 
+    document.body.onkeyup = function(e) {
+        if(e.keyCode === 32) {
+            var time = minutes * 60;
+            initialTime = time;
+            if (!time) return;
+        if (isNaN(time)) {
+            alert('Please input valid number');
+        }
+
+            timer.start(time);
+        }
+    };
+
     $pause.on('click', function() {
         if (timer.getStatus() === 'started') {
             timer.pause();
