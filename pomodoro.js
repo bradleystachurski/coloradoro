@@ -15,7 +15,10 @@ $(document).ready(function() {
         $refresh = $('.refresh'),
         $timerSeconds = $('.timerSeconds'),
         $timerMinutes = $('.timerMinutes'),
-        $timeRemaining = $('.time-remaining');
+        $timeRemaining = $('.time-remaining'),
+        $externalUI = $('.title-wrapper, .timer-wrapper');
+
+    var uiHidden = false;
 
     var initialTime,
         clockPercent;
@@ -134,6 +137,27 @@ $(document).ready(function() {
             $timeRemaining.text(minutes + ':00');
         }
     });
+
+    var hideTimeout;
+    $externalUI.on('mousemove', function() {
+        if(timerStarted) {
+            showUI();
+            hideTimeout = setTimeout(hideUI, 3000);
+        }
+    });
+
+    function hideUI() {
+        $externalUI.animate({opacity: 0});
+        uiHidden = true;
+    }
+
+    function showUI() {
+        clearTimeout(hideTimeout);
+        if(uiHidden) {
+            $externalUI.animate({opacity: 1});
+            uiHidden = false;
+        }
+    }
 
     function playSoundEnd() {
         //var mySound = 'http://www.presentationmagazine.com/sound/bell_ting_ting.mp3';
