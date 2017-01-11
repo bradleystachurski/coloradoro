@@ -76,7 +76,8 @@ $(document).ready(function() {
             $timerMinutes.text('');
             playSoundEnd();
             drawProgress(0, 0);
-            document.title = 'Coloradoro (end)'
+            document.title = 'Coloradoro (end)';
+            showUI();
         }
     });
 
